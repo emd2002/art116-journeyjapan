@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* This is the Journey Japan homepage stylesheet */
+
+/* Root variables for easy customization */
+:root {
+    --main-font: Arial, sans-serif;
+    --main-color: black;
+    --button-text-color: white;
+    --button-border-color: #000000; /* Black */
+}
+
+/* Body styling */
+body {
+    background-image: url("../images/backgroundimage1.png");
+    background-size: cover;
+    background-repeat: no-repeat;     
+}
+
+/* Flex container for layout */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, p, #datetime {
+    font-family: var(--main-font);
+    color: var(--main-color);
+}
+
+h1 {
+    font-size: 72px;
+    margin: 1px;
+    line-height: 0.8;
+    text-align: center;
+    text-shadow: 2px 2px 0 white, -2px 2px 0 white;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 0.5;
+    text-align: center;
+    text-shadow: 1px 1px 0 white, -1px 1px 0 white;
+}
+
+h3 {
+    font-size: 36px;
+    line-height: 0.5;
+    text-align: center;
+}
+
+h4 {
+    font-size: 24px;
+    text-align: center;
+    margin: 15px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 36px;
+    margin: 1px;
+    padding: 10px;
+}
+
+/* Datetime styling */
+#datetime {
+    font-size: 20px;
+    margin: 1px;
+}
+
+/* Button styles */
+.button {
+    border: none;
+    color: var(--button-text-color);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: red; /* Add a background color */
+    border: 2px solid var(--button-border-color);
+}
+
+.button2 {
+    background-color: blue; /* Add a background color */
+    border: 2px solid var(--button-border-color);
+}
+
+/* Button hover effects */
+.button1:hover {
+    background-color: darkred;
+}
+
+.button2:hover {
+    background-color: darkblue;
+}
+
+/* Contact section styling */
+#contact {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 { font-size: 48px; }
+    h2 { font-size: 36px; }
+    h3 { font-size: 28px; }
+    p { font-size: 24px; }
+}
+
